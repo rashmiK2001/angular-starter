@@ -1,0 +1,20 @@
+<h6 mat-dialog-title class="dialog-bg">{{ data.title }}</h6>
+
+<button mat-icon-button tabindex="-1" class="close" (click)="close($event)" aria-label="confirm dialog close button">
+    <mat-icon class="fs-5">cancel</mat-icon>
+</button>
+
+<div mat-dialog-content class="py-3">
+    <p class="mb-0 text-dark">
+        {{ data.message }}
+    </p>
+</div>
+
+<div mat-dialog-actions align="end" class="p-2">
+    <button mat-button class="px-4" (click)="close($event)">
+        {{ data.cancelText }}
+    </button>
+    <button mat-flat-button class="px-4" color="primary" cdkFocusInitial (click)="confirm($event)">
+        {{ data.confirmText }}
+    </button>
+</div>
