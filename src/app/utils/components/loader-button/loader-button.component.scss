@@ -1,0 +1,42 @@
+@use "../../../../styles/custom/colors.scss" as us;
+
+button {
+    transition: 0.6s;
+}
+
+.btn-ring {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: ring 1.2s linear infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.login-btn {
+    height: 45px !important;
+}
+
+.btn-overlay {
+    background: rgb(237 237 237) !important;
+    color: us.$primary !important;
+
+    .btn-ring {
+        border-color: us.$primary transparent us.$primary transparent !important;
+        width: 16px !important;
+        height: 16px !important;
+        margin-left: 0.25rem !important;
+    }
+}

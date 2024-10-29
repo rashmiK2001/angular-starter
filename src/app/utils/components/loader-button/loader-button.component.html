@@ -1,0 +1,7 @@
+<button mat-flat-button color="{{theme}}" (click)="onClickBtn()" [disabled]="loading || disabled" [type]="btnType"
+    [ngClass]="btnClass">
+    <span class="d-flex align-items-center">
+        {{loading ? loadingText : 'Button Text'}}
+        <span *ngIf="loading" class="btn-ring ms-3"></span>
+    </span>
+</button>
