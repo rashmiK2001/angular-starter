@@ -1,0 +1,30 @@
+$body-bg: #fff;
+$body-color: #464646;
+
+$primary: #336699;
+$med-grey: #e7e7e7;
+$light-grey: #F8F8F8;
+$light-primary: #d8e4f1;
+$table-primary: #eff7ff;
+$bg-danger: #d03939;
+$border-color: #ccc;
+
+$primary-palette: (
+    50: #e5f1f7,
+    100: #bfddee,
+    200: #9ac8e3,
+    300: #79b3d7,
+    400: #62a3d0,
+    500: #4f95c9,
+    600: #4687bc,
+    700: #3b76ab,
+    800: $primary,
+    900: #264a79,
+
+    //TODO : explore and update other options - Wilson
+    contrast: (50: rgba(black, 0.87),
+        100: rgba(black, 0.87),
+        200: rgba(black, 0.87),
+        300: white,
+    )
+);
