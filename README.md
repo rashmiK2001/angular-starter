@@ -26,10 +26,7 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/rashmiK2001/angular-starter.git
    cd angular-starter
-2. Install the dependencies :
-   ```bash
-   git clone https://github.com/rashmiK2001/angular-starter.git
-   cd angular-starter
+
 3. run :
    ```bash
    ng serve 
