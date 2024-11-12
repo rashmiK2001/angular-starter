@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { routes as routeConstants } from '.././app/constants/routes';
-
 import { LayoutComponent } from './core/layout/layout.component';
+import { routes as routeConstants } from './constants/routes';
 
-const { LOGIN, DASHBOARD, USER, ADD, EDIT } = routeConstants
+const { LOGIN, DASHBOARD, USER, } = routeConstants
 
 const routes: Routes = [
   { path: '', redirectTo: `/${LOGIN}`, pathMatch: 'full' },
